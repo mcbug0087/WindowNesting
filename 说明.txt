@@ -1,0 +1,1 @@
+说明：这是王宇瀚编写的Python版本的“窗口嵌套程序”，功能与易语言版本的“窗口嵌套程序”差不多，但是内核大不相同，禁止商用，已上传至GitHub仓库，仓库地址：https://github.com/mcbug0087/WindowNesting/
