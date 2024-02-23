@@ -1,5 +1,6 @@
+[中文](README.md)  |  [English](README_en.md)
+
 # WindowNesting Program
-[中文](README.md)    [English](README_en.md)
 
 WindowNesting Program written by GPT-3.5 and compiled by MCBUG087
 
