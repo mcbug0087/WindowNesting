@@ -1,4 +1,7 @@
 import tkinter as tk
+from tkinter import messagebox  # 导入 messagebox 子模块
+import webbrowser
+import threading  # 导入 threading 模块
 import win32gui
 import win32con
 
@@ -31,9 +34,27 @@ def embed_windows(parent_entry, child_entry, status_label):
     embed_window(parent_handle, child_handle)
     status_label.config(text="子窗口已嵌套到父窗口中")
 
+def to_github():
+    url = 'https://github.com/mcbug0087/WindowNesting/'
+    webbrowser.open(url)
+
+def open_github_thread():
+    threading.Thread(target=to_github).start()  # 在新线程中打开web浏览器
+
 def main():
     window = tk.Tk()
     window.title("窗口嵌套程序")
+
+    # 创建菜单
+    menubar = tk.Menu(window)
+    window.config(menu=menubar)
+
+    help_menu = tk.Menu(menubar, tearoff=0)
+    menubar.add_cascade(label="帮助", menu=help_menu)
+
+    # 添加菜单项
+    help_menu.add_command(label="GitHub仓库", command=open_github_thread)
+    help_menu.add_command(label="关于", command=lambda: tk.messagebox.showinfo("关于", "这是一个窗口嵌套程序。\n 代码编写GPT-3.5,编译MCBUG087"))
 
     parent_label = tk.Label(window, text="父窗口句柄：")
     parent_label.pack()
