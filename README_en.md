@@ -2,7 +2,7 @@
 
 # WindowNesting Program
 
-WindowNesting Program written by GPT-3.5 and compiled by MCBUG087
+WindowNesting Program written by MCBUG087.
 
 [Official website(~~Although it has not been built yet...~~)](https://winnest.mcbug087.eu.org)
 
