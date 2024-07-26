@@ -54,7 +54,7 @@ def main():
 
     # 添加菜单项
     help_menu.add_command(label="GitHub仓库", command=open_github_thread)
-    help_menu.add_command(label="关于", command=lambda: tk.messagebox.showinfo("关于", "这是一个窗口嵌套程序。\n 代码编写GPT-3.5,编译MCBUG087"))
+    help_menu.add_command(label="关于", command=lambda: tk.messagebox.showinfo("关于", "这是一个窗口嵌套程序。\n 作者MCBUG087"))
 
     parent_label = tk.Label(window, text="父窗口句柄：")
     parent_label.pack()
